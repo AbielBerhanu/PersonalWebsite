@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abiel Berhanu | Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray background */
+            color: #E5E7EB; /* Light gray text */
+        }
+        .section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #38BDF8; /* Light blue */
+            border: 4px solid #1F2937; /* Darker background color */
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: -21px;
+            top: 20px;
+            width: 2px;
+            height: calc(100% - 20px);
+            background-color: #374151; /* Gray */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Abiel Berhanu</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#experience" class="text-gray-300 hover:text-sky-400 transition duration-300">Experience</a>
+                <a href="#education" class="text-gray-300 hover:text-sky-400 transition duration-300">Education</a>
+                <a href="#skills" class="text-gray-300 hover:text-sky-400 transition duration-300">Skills</a>
+                <a href="#publications" class="text-gray-300 hover:text-sky-400 transition duration-300">Publications</a>
+                <a href="#contact" class="text-gray-300 hover:text-sky-400 transition duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-[80vh] flex items-center section">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="max-w-3xl">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">Computer & Electrical Engineering Student</h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8">
+                        Passionate about quantum computing, AI research, and full-stack development. Currently pursuing research in superconducting spiking-neurons at the University of Oklahoma.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:Berhanuabiel@gmail.com" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Get In Touch</a>
+                        <a href="https://linkedin.com/in/abielberhanu" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">View LinkedIn</a>
+                    </div>
+                </div>
+                <div class="flex justify-center md:justify-end">
+                    <img src="https://i.postimg.cc/RZh6X0b6/B0925-B92-9394-4-FAB-BEF4-8043-A9-B5662-F-4-5005-c.jpg" alt="Abiel Berhanu" class="w-80 h-80 object-cover rounded-full border-4 border-sky-500 shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 section">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Research & Work Experience</h2>
+            <div class="relative max-w-3xl mx-auto">
+                <!-- Timeline Item -->
+                <div class="timeline-item relative pl-8 mb-12">
+                    <p class="text-sky-400 text-sm font-semibold">Aug 2025 - Present</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Outreach Chair</h3>
+                    <p class="text-gray-400 font-medium">IEEE - University of Oklahoma Student Branch</p>
+                    <ul class="mt-4 space-y-2 text-gray-300 list-disc list-inside">
+                        <li>Organizing and leading outreach events to promote electrical and computer engineering to students.</li>
+                        <li>Building connections with local schools and communities to foster interest in STEM fields.</li>
+                    </ul>
+                </div>
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item relative pl-8 mb-12">
+                    <p class="text-sky-400 text-sm font-semibold">Apr 2025 - Present</p>
+                    <h3 class="text-xl font-bold text-white mt-1">URECA Undergraduate Research Fellow</h3>
+                    <p class="text-gray-400 font-medium">University of Oklahoma Inquire Labs</p>
+                    <ul class="mt-4 space-y-2 text-gray-300 list-disc list-inside">
+                        <li>Leading the design of a superconducting spiking-neuron with real-time flux-bias threshold tuning.</li>
+                        <li>Developing SPICE-level models to characterize spike energetics and automatic reset behavior.</li>
+                        <li>Preparing technical documentation for symposium presentation and publication.</li>
+                    </ul>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item relative pl-8 mb-12">
+                    <p class="text-sky-400 text-sm font-semibold">Jan 2025 - Present</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Undergraduate Researcher</h3>
+                    <p class="text-gray-400 font-medium">University of Oklahoma Inquire Labs</p>
+                    <ul class="mt-4 space-y-2 text-gray-300 list-disc list-inside">
+                        <li>Developed theoretical framework for the Larsh Neuron, a quantum-coherent oscillatory spiking model.</li>
+                        <li>Implemented and validated computational simulations of coupled quantum oscillators.</li>
+                        <li>Coordinated experimental plans for an integrated circuit prototype (2nd-author paper under review).</li>
+                    </ul>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item relative pl-8 mb-12">
+                    <p class="text-sky-400 text-sm font-semibold">May 2024 - Present</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Coding Instructor/Tutor</h3>
+                    <p class="text-gray-400 font-medium">iCode</p>
+                    <ul class="mt-4 space-y-2 text-gray-300 list-disc list-inside">
+                        <li>Teach Java, Python, HTML, and CSS through engaging, hands-on projects.</li>
+                        <li>Foster a deep understanding of programming concepts for various learning styles.</li>
+                    </ul>
+                </div>
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item relative pl-8 mb-12">
+                    <p class="text-sky-400 text-sm font-semibold">Sep 2023 - Nov 2024</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Full-Stack Engineer / AI Researcher</h3>
+                    <p class="text-gray-400 font-medium">Corner Stone AI.Labs</p>
+                    <ul class="mt-4 space-y-2 text-gray-300 list-disc list-inside">
+                        <li>Led website creation, securing a partnership with a major airport.</li>
+                        <li>Played a pivotal role in developing a generative AI bot, winning a competitive pitch competition.</li>
+                    </ul>
+                </div>
+                 <!-- Timeline Item 5 -->
+                <div class="timeline-item relative pl-8">
+                    <p class="text-sky-400 text-sm font-semibold">May 2023 - Aug 2023</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Non-profit Starter/Instructor</h3>
+                    <p class="text-gray-400 font-medium">Askus coding pathways</p>
+                    <ul class="mt-4 space-y-2 text-gray-300 list-disc list-inside">
+                        <li>Founded and instructed at a coding nonprofit to empower learners through programming education.</li>
+                        <li>Guided individuals to create websites and games, giving them a head start in their careers.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20 bg-gray-900 rounded-2xl section">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Education</h2>
+                <p class="text-sky-400 text-xl font-semibold">University of Oklahoma || Norman, OK</p>
+                <p class="text-lg text-gray-300 mt-2">B.S. in Computer/Electrical Engineering | Minor in Physics</p>
+                <p class="text-gray-400">Expected Graduation: May 2027</p>
+                <div class="mt-8">
+                    <h4 class="text-lg font-semibold text-white mb-4">Relevant Coursework</h4>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Data Structures & Algorithms</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Digital Logic Design</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Signals and Filtering</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Object-Oriented Programming</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Circuit Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 section">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 hover:-translate-y-2 transition-all duration-300">
+                    <p class="text-lg font-semibold text-white">Java</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 hover:-translate-y-2 transition-all duration-300">
+                    <p class="text-lg font-semibold text-white">Python</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 hover:-translate-y-2 transition-all duration-300">
+                    <p class="text-lg font-semibold text-white">C++</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 hover:-translate-y-2 transition-all duration-300">
+                    <p class="text-lg font-semibold text-white">Object-Oriented Programming</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 hover:-translate-y-2 transition-all duration-300">
+                    <p class="text-lg font-semibold text-white">HTML</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 hover:-translate-y-2 transition-all duration-300">
+                    <p class="text-lg font-semibold text-white">CSS</p>
+                </div>
+                 <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 hover:-translate-y-2 transition-all duration-300">
+                    <p class="text-lg font-semibold text-white">Teaching</p>
+                </div>
+                 <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 hover:-translate-y-2 transition-all duration-300">
+                    <p class="text-lg font-semibold text-white">Digital Logic Design</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="py-20 section">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Publications</h2>
+            <div class="max-w-3xl mx-auto bg-gray-800 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-white">Larsh Neuron</h3>
+                <p class="text-sky-400 mt-1">A. Berhanu (Second Author), et al.</p>
+                <div class="mt-4">
+                    <span class="inline-block bg-yellow-500 text-gray-900 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Under Review</span>
+                </div>
+                <p class="text-gray-300 mt-4">
+                    This paper introduces a quantum-coherent oscillatory spiking model that combines phase-slip dynamics with neural oscillators to enable short-term memory and higher-order reasoning.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center section">
+             <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+             <p class="text-gray-300 max-w-xl mx-auto mb-8">I'm always open to discussing new research, projects, or opportunities. Feel free to reach out!</p>
+             <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:Berhanuabiel@gmail.com" class="text-sky-400 hover:text-sky-300 transition duration-300 text-lg flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    Berhanuabiel@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/abielberhanu" target="_blank" class="text-sky-400 hover:text-sky-300 transition duration-300 text-lg flex items-center gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                </a>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-20">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-400">
+            <p>&copy; 2024 Abiel Berhanu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for scroll animations
+        const sections = document.querySelectorAll('.section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
